@@ -1,38 +1,257 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sidebar{
+  height: 100vh;
+  background:rgb(0,7,61) ;
+  /* background:rgb(24, 23, 23) ; */
+  color: white;
+  overflow-y: auto;
+  margin-top: 0;
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.main-container {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  line-height: 1;
+  margin-left: 8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bars {
+  width: 40px;
+  margin-left:8px;
+  margin-top: 8px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hide {
+  display: none;
+}
+.routes {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  text-decoration: none;
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+  text-decoration: none;
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  text-decoration: none;
+}
+.active {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  text-decoration: none;
+}
+.menu {
+  display: flex;
+  color: white;
+
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
+.icon{
+  height: 30px;
+}
+.logo{
+  color: white;
+  font-size: 30px;
+}
+.navbar{
+  background:rgb(0,7,61);
+  color: rgb(251, 243, 243);
+  border-bottom: groove ;
+}
+.nav-link{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-link:hover{
+  color: rgb(251, 251, 251);
+  background-color: blueviolet;
+}
+.logo{
+  border-right:groove;
+  padding: 0px 10px 0px 10px;
+  /* font-size: 42px; */
+  background: -webkit-linear-gradient(rgb(238, 233, 233), rgb(225, 16, 65));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dropdown1{
+  color: black;
+  margin-right: 40px;
+}
+.navbar-nav{
+  margin-left: 620px;
+}
+.a{
+  text-decoration: none;
+}
+.username{
+  margin-top: 5px;
+  margin-right: 15px;
+  color:white;
+  text-decoration: none;
+}
+.dropdown-toggle{
+  margin-right: 15px;
+}
+.btn{
+  background:rgb(0,7,61) ;
+}
+.card{
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  /* background-color: rgb(101, 79, 101); */
+  /* background-color:#7e9a9a */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total_user_pt{
+  margin:0 auto;
+  text-align:center;
+}
+
+.flex-container{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.stats{
+  text-align: center;
+}
+.table-container{
+  padding: 40px 60px 60px 60px;
+  margin-left: 25px;
+  margin-top: 20px;
+  height: 600px;
+  width: 120%;
+  background-color: white;
+}
+
+.tr:hover {
+  background-color: #dfdf2f;
+}
+
+.pagination{
+margin-left: 140px;
+margin-top: 70px;
+}
+
+.active_users,.totalusers{
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+  height: 300Px;
+  width: 990Px;
+  border-radius: 8px;
+}
+
+.table{
+  border:solid 1px;
+}
+.top_rated{
+  height: 250px;
+  width: 485px;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+}
+.pending_approve_chart{
+  display: flex;
+  margin-left: 180px;
+  margin-right: 50px;
+}
+
+.adminedit{
+  height: 500px;
+  width: 785px;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+}
+.header{
+  position:sticky;
+  top:0;
+  left:0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.form-control{
+  width:780px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.reset{
+  width:750px;
+  height:490px;
+  background-color: rgb(255, 255, 255);
+  border:groove 2px salmon;
+  padding:40px 40px 40px 40px;
+  margin-left:260px;
+  margin-top: 40px;
+}
+.sticky-wrapper {
+  position: relative;
+  height: 3rem; /* We need to change this value */
+}
+
+.sticky .sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.form-label::before{
+  content: "*";
+    color: red;
 }

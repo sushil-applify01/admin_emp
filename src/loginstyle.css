@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+/* *{
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 4px;
+  background-color: #25252A;
+} */
+.logincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: px;
+  margin-left: 0px;
+  width: 100%;
+  height: 569px;
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 4px;
+}
+
+.logologin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 28px;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.logologin {
+  width: 130px;
+}
+
+.form {
+  width: 38%;
+  float: none;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.form-element {
+  margin-top: 1%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  color: #222b45;
+}
+
+.form-input {
+  border: none;
+  border: #d6cece solid 1px;
+  border-radius: 3px;
+  height: 40px;
+  width: 97%;
+  padding-left: 10px;
+  box-shadow: #959595;
+  outline: none;
+
+}
+
+.content {
+  color: #959595;
+  cursor: default;
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-password-reset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.loginlink{
+  color: black;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-style: normal;  
+  margin: 0 px;
+  padding: 0%;
+  font-size: 15px;
+  cursor: pointer;
+}
+.checkbox{
+  cursor: pointer;
+  
+}
+
+.checkbox-content{
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  float: left;
+}
+
+.form-button {
+  width: 100%;
+  margin-top: 0%;
+}
+
+.button {
+  
+  height: 48px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background-color: rgb(252, 3, 69);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #f9e506;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+.button:hover{
+box-shadow: inset 300px 0 0 0 #f9e506;
+}
+
+.select-theme {
+  -webkit-appearance: none;
+  border: none;
+  border-bottom: 1px solid #acacac ;
+  height: 35px;
+  width: 100%;
+
+}
+
+.back-to-login{
+  font-size: 15px;
+  color: black;
+  display: flex;
+  text-decoration: none;
+  font-style: normal;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.pass-msg
+{
+  border: none;
+  border-left: 4px solid black;
+  padding: 13px;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+}
+
+.get-pwd{
+ margin-top: 65px;  
+}
+
+
+
+/* #light {
+  background-color: #f3ebf6;
+}
+
+#dark {
+  background-color: yellow;
+} */
